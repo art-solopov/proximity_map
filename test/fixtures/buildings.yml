@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+valid:
+  name: Здание 1
+  address: 3-я ул. Строителей, д. 5
+  latitude: 55.75
+  longtitude: 37.59
+
+nameless:
+  name:
+  address: MyString
+  latitude: 1.5
+  longtitude: 1.5
