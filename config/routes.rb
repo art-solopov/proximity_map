@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'map/show'
+
+  get 'map/search_within'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
