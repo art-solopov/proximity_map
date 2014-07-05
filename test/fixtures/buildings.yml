@@ -1,13 +1,42 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-valid:
+valid: &default
   name: Здание 1
   address: 3-я ул. Строителей, д. 5
   latitude: 55.75
   longtitude: 37.59
 
-nameless:
+no_name:
+  <<: *default 
   name:
-  address: MyString
-  latitude: 1.5
-  longtitude: 1.5
+
+no_address:
+  <<: *default
+  address:
+
+no_latitude:
+  <<: *default
+  latitude:
+
+no_longtitude:
+  <<: *default
+  longtitude:
+
+# Data courtesy of OpenStreetMap
+big_ben:
+  name: Big Ben
+  address: UK, London, Westminster, Big Ben
+  latitude: 51.5006617
+  longtitude: -0.1245829
+
+moscow_kremlin:
+  name: Кремль
+  address: Москва, Кремль
+  latitude: 55.749
+  longtitude: 37.615
+
+war_museum:
+  name: Музей Отечественной Войны 1812 года
+  address: Площадь Революции, д. 2/3
+  latitude: 55.76511
+  longtitude: 37.61901

@@ -4,6 +4,7 @@ default: &default
   timeout: 5000
   user: proxmap
   password: proxmap
+  host: localhost
 
 development:
   <<: *default
