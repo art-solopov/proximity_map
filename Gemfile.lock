@@ -60,12 +60,19 @@ GEM
     multi_json (1.10.1)
     nokogiri (1.6.2.1)
       mini_portile (= 0.6.0)
+    openlayers-rails (0.0.4)
+      railties (>= 3.1)
     pg (0.17.1)
     polyglot (0.3.5)
     pry (0.10.0)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    pry-doc (0.6.0)
+      pry (~> 0.9)
+      yard (~> 0.8)
+    pry-rails (0.3.2)
+      pry (>= 0.9.10)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -120,6 +127,7 @@ GEM
     uglifier (2.5.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    yard (0.8.7.4)
 
 PLATFORMS
   ruby
@@ -130,8 +138,11 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   nokogiri
+  openlayers-rails
   pg
   pry
+  pry-doc
+  pry-rails
   rails (= 4.1.4)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)

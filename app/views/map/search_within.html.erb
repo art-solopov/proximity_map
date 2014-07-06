@@ -1,2 +1,18 @@
-<h1>Map#search_within</h1>
-<p>Find me in app/views/map/search_within.html.erb</p>
+<table>
+  <tr>
+    <th>Название</th>
+    <th>Адрес</th>
+    <th>Широта</th>
+    <th>Долгота</th>
+  </tr>
+  <% @buildings.each do |bld| %>
+    <tr>
+      <td>bld.name</td>
+      <td>bld.address</td>
+      <td>bld.latitude</td>
+      <td>bld.longtitude</td>
+    </tr>
+  <% end %>
+</table>
+
+
