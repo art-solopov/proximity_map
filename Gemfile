@@ -48,3 +48,7 @@ group :development do
   gem 'pry-rails'
   gem 'nokogiri'
 end
+
+# Heroku integration
+gem 'rails_12factor', group: :production
+ruby "2.0.0"
