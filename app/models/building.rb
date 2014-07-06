@@ -1,3 +1,5 @@
+# (c) 2014 Солопов Артемий Ильич / Artemiy Solopov
+
 class Building < ActiveRecord::Base
   validates :name, presence: true
   validates :address, presence: true

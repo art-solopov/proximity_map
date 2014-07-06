@@ -1,3 +1,4 @@
+# (c) 2014 Солопов Артемий Ильич / Artemiy Solopov
 class MapController < ApplicationController
 
   WITHIN_DISTANCE=4000
