@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+require 'yaml'
+
+sdata = YAML::load(open('moscow.yaml')).sample(50)
+sdata.each{|e| Building.create(e)}
+
