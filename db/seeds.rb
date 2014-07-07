@@ -8,5 +8,8 @@
 require 'yaml'
 
 sdata = YAML::load(open('moscow.yaml')).sample(50)
-sdata.each{|e| Building.create(e)}
+sdata.each_with_index do |e, i|
+  bld = Building.create(e)
+  bld.id = i + 1
+end
 

@@ -34,6 +34,7 @@ click_hdl = (e) ->
   lonlat = map.getLonLatFromPixel(e.xy)
   lonlat_t = lonlat.transform(to_projection, from_projection)
   console.log(lonlat_t)
+  $('#latlon').text(lonlat_t.lat + " с. ш., " + lonlat_t.lon + " в. д.")
   $.ajax('/map/search_within.json', {
     data:
       lat: lonlat_t.lat
@@ -47,6 +48,7 @@ click_hdl = (e) ->
       <th>Адрес</th>
       <th>Широта</th>
       <th>Долгота</th>
+      <th>Расстояние (м)</th>
       </tr>
       ")
       for rec in data
@@ -55,7 +57,8 @@ click_hdl = (e) ->
           "<tr><td>" + rec.name + "</td>
           <td>" + rec.address + "</td>
           <td>" + rec.latitude + "</td>
-          <td>" + rec.longtitude + "</td></tr>"
+          <td>" + rec.longtitude + "</td>
+          <td>" + rec.distance + "</td></tr>"
         )
       $('#res').slideDown()
   })
